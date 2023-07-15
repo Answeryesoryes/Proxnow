@@ -1,0 +1,48 @@
+  <head>
+    <h1 id="status">Wait a little bozo!!</h1>
+    <h1 id="reload"> </h1>
+    <img id="status2" src="https://static.wixstatic.com/media/72fac8_14ede31619e44b0498c84845f0befbdb~mv2.gif"></img>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<iframe hidden id="checker" src="https://dino4.jaydogstack.repl.co"></iframe>
+<script>
+var intervalId = window.setInterval(function(){
+             if($("#checker").contents().text().search("Run this Repl to see the results here.")!=-1){
+               document.getElementById("status2").src = "https://media.tenor.com/jNpoXPX1RGUAAAAM/no-cat.gif"
+               window.open("https://replit.com/@jaydogstack/dino4", '_blank');
+               document.getElementById("status").innerHTML = "Proxnow Crashed!"
+}
+               if($("#checker").contents().text().search("Unable to Wake Up")!=-1){
+               document.getElementById("status2").src = "https://media.tenor.com/jNpoXPX1RGUAAAAM/no-cat.gif"
+               window.open("https://replit.com/@jaydogstack/dino4", '_blank');
+               document.getElementById("status").innerHTML = "Proxnow Crashed!"
+}
+var loading_url = "https://dino4.jaydogstack.repl.co"
+$.ajax({
+url: loading_url,
+type: 'GET',
+complete: function(e, xhr, settings){
+     if(e.status === 200){
+          $('#checker').attr('src', 'https://dino4.jaydogstack.repl.co');
+     }else if(e.status===500){
+      document.getElementById("status").innerHTML = "Ran into a Internal Error! Waiting for it to be gone"
+document.getElementById("status2").src = "https://media.tenor.com/jNpoXPX1RGUAAAAM/no-cat.gif"
+     }
+  }
+});
+        if($("#checker").contents().text().search("Proxnow")!=-1){
+          document.getElementById("status2").src = "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTU3ODNlNmQ0Nzg3NzAwYjZkMGI1ZTQ3ZjA1ZjEyNTU4ODkxZTcyYSZjdD1z/8Vp4Hpm1CgeKi4gzjs/giphy.gif"
+        document.getElementById("status").innerHTML = "The proxy is working!"
+}
+}, 5000);
+
+</script>
+<script>
+  var intervalId = window.setInterval(function(){
+  document.getElementById('checker').contentWindow.location.reload();
+    setTimeout(() => {
+  document.getElementById("reload").innerHTML = "Checking Proxnow! "
+    }, 1000);
+    document.getElementById("reload").innerHTML = " "
+  }, 5000);
+</script>
