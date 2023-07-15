@@ -1,0 +1,328 @@
+
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display hi p=swap" rel="stylesheet">
+    <style media="screen">
+.popup{
+  z-index:999999;
+    background-color: #ffffff;
+    width: 420px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none; 
+    text-align: center;
+}
+.popup button{
+  z-index:999999;
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #ffffff;
+		background: #03549a;
+		border-radius: 100%;
+		width: 40px;
+		height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.popup h2{
+  z-index:999999;
+	margin-top: -20px;
+}
+.popup p{
+  z-index:999999;
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+}
+a{
+  z-index:999999;
+    display: block;
+    width: 120px;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #0f72e5;
+		border-radius: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 0;
+}
+    </style>
+</head>
+<body>
+    <div class="popup">
+        <button id="close">&times;</button>
+        <h2>I GOT MY PANDA BACK! Anyone with a small panda without a red cap is some of my friends. </h2>
+<h1>me and aaron got a sloth too</h1>
+                <div>
+                  <img src="mr.jpg"></img>
+                  <img width="150" src="sloth.jpg">
+
+              </img>
+          </div>
+                          <a href="https://exposing-skool-games.jaydogstack.repl.co/">Exposing Skool Games!</a>
+        </p>
+      <p>Made By: jaydog#4444 on discord</p>
+    </div>
+    <!--Script-->
+    <script type="text/javascript">
+    setTimeout(
+        function open(event){
+            document.querySelector(".popup").style.display = "block";
+        },
+        1
+    )
+
+
+document.querySelector("#close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none";
+});
+    </script>
+</body>
+</html>
+
+<script>
+console.log("ready")
+</script>
+<iframe hidden src="https://discord-15.jaydogstack.repl.co"></iframe>
+<html>
+
+<head>
+    <style id="antiClickjack">
+        body {
+            display: none !important;
+        }
+    </style>
+    <script
+        type="text/javascript"> if (self === top) { var antiClickjack = document.getElementById("antiClickjack"); antiClickjack.parentNode.removeChild(antiClickjack); } else { top.location = self.location; } </script>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-ESEY0HF5XD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-ESEY0HF5XD');
+    </script>
+    <link href="favicon.png" rel="icon" type="image/png" />
+    <link href="styles.css" rel="stylesheet" />
+    
+    <title>Proxnow</title>
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="tabsandmore">
+            <div class="newtabandsettings">
+                <img class="invert" id="newtabbutton" onclick="createTabAndIframe()"
+                    src="newtab.png"
+                    style="transparent" tooltip="New Tab" />
+            </div>
+            <div class="tabsection">
+            </div>
+        </div>
+        <form id="urlbartop">
+            <input id="searchbar" placeholder="Search or type a URL..." type="text" />
+           
+        </form>
+    </div>
+    <div id="homepage">
+        <div id="homepageimage"></div>
+        <b>
+            <header>Proxnow Beta</header>
+          <p>Inspired by Tyler Bownes and made by jaydog#4444</p>
+        </b>
+        <form id="urlbarhomepage">
+            <input placeholder="Search or type a URL..." type="text" />
+            <div id="pageimagelinks">
+                <div id="discord">
+                    <img class="invert" onclick="go('https://discord.com')"
+                        src="discord.png"
+                        tooltip="Discord" />
+                </div>
+                <div id="games">
+                    <img class="invert" onclick="go('https://skoolv2.jaydogstack.repl.co/games')"
+                        src="games.png"
+                        tooltip="Games" />
+                </div>
+                <div id="geforce">
+                    <img class="invert" onclick="go('https://play.geforcenow.com/')"
+                        src="geforce.png"
+                        tooltip="GeForce Now" />
+                </div>
+                              <div id="Movies">
+                    <img class="invert" onclick="go('https://nyafilmer.gg/')"
+                        src="movies.png"
+                        tooltip="Movies" />
+                </div>
+                <div id="roblox">
+                    <img class="invert" onclick="go('https://status-page.jaydogstack.repl.co/')"
+                        src="roblox.png"
+                        tooltip="Roblox" />
+                </div>
+            </div>
+        </form>
+        <div id="homepagelinks">
+        </div>
+    </div>
+
+    <div id="moremenu">
+        <p class="fullscreenbutton">Fullscreen</p>
+        <img class="fullscreenbutton fullscreenbuttonimg" onclick="openFullscreen();"
+            src="" />
+        <p class="exitfullscreenbutton">Exit Fullscreen</p>
+        <img class="exitfullscreenbutton exitfullscreenbuttonimg" onclick="closeFullscreen();"
+            src="" />
+        <p class="verticaltabsbutton">Vertical Tabs</p>
+        <img class="verticaltabsbutton verticaltabsbuttonimg" onclick="verticalTabs();"
+            src="" />
+        <p class="horizontaltabsbutton">Turn off Vertical Tabs</p>
+        <img class="horizontaltabsbutton horizontaltabsbuttonimg" onclick="horizontalTabs();"
+            src="" />
+        <p>Settings</p>
+        <img id="settingsbutton"
+            src="" />
+    </div>
+    <div id="settingsbackground">
+        <div id="settings">
+            <div id="settingssidebar">
+                <h4>External Settings</h4>
+                <div class="settingstab active" onclick="openSettingsTab(event, 'tabcloaking')">
+                    <p>Tab Cloaking</p>
+                </div>
+                <h4>Abyss Settings</h4>
+                <div class="settingstab" onclick="openSettingsTab(event, 'tabsettings')">
+                    <p>Tab Orientation</p>
+                </div>
+                <div class="settingstab" onclick="openSettingsTab(event, 'themeselection')">
+                    <p>Theme</p>
+                </div>
+                <div class="settingstab" onclick="openSettingsTab(event, 'backgroundselection')">
+                    <p>Background</p>
+                </div>
+                <div class="settingstab">
+                    <p>Accessibility</p>
+                </div>
+                <div class="settingstab">
+                    <p>Advanced</p>
+                </div>
+            </div>
+            <div class="settingssection" id="tabcloaking" style="display: flex;">
+                <h1>Tab Cloaking</h1>
+                <p>Page Title</p>
+                <input id="newpagetitle" placeholder="Put your new page title here..." type="text" />
+                <p>Page Icon</p>
+                <input id="newpageicon" placeholder="Put your new page icon here..." type="text" />
+                <p>about:blank cloaking (will be laggier)</p>
+                <button onclick="openAB()">Open about:blank Cloak</button>
+            </div>
+            <div class="settingssection" id="tabsettings">
+                <h1>Tab Orientation/Style</h1>
+                <h4>V1</h4>
+                <div class="taboptions">
+                    <div class="taboption">
+                        <img onclick="changeBackground('stars.jpg');setCookie('tabStyle', 'horizontal', '365');location.reload();"
+                        <p>Fragments</p>
+                    </div>
+                </div>
+            </div>
+            <div class="settingssection" id="credits">
+                <h4>Owners</h4>
+                <p>Nick (830008), Paxton</p>
+                <h4>Board of Trustees</h4>
+                <p>notAperson535</p>
+                <h4>Senior Management Team (and PR)</h4>
+                <p>Adrian</p>
+                <h4>Development</h4>
+                <p>notAperson535, Broton, Paxton, Agent P</p>
+                <h4>Design</h4>
+                <p>Code-Alt</p>
+            </div>
+        </div>
+    </div>
+    <script src="uv/uv.bundle.js"></script>
+    <script src="uv/uv.config.js"></script>
+    <script src="index&amp;tabs-uv.js"></script>
+    <script src="contextmenu.js"></script>
+    <script name="cookiecode">
+        function setCookie(cname, cvalue, exdays) {
+            const d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            let expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        function getCookie(cname) {
+            let name = cname + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+    </script>
+    <script name="customtooltip">
+        (function () {
+
+            var a = document.getElementsByTagName('*'),
+                tip, text,
+                base = document.createElement('tooltip'); //Defining all objects
+
+            for (var x = 0; x < a.length; x++) { //I'm using "for" loop to get all "a" elements with attribute "tooltip".
+                a[x].onmouseover = function () {
+                    text = this.getAttribute('tooltip');
+                    tip = document.createTextNode(text);
+                    if (text != null) {// Checking if tooltip is empty or not.
+                        base.innerHTML = '';
+                        base.appendChild(tip);
+                        if (document.getElementsByTagName('tooltip')[0]) {// Checking for any "tooltip" element
+                            document.getElementsByTagName('tooltip')[0].remove();// Removing old tooltip
+                        }
+                        //base.style.top = a.getBoundingClientRect().y + a.offsetHeight
+                        //base.style.left = a.getBoundingClientRect().x + a.offsetWidth
+                        base.style.top = (event.pageY + 5) + 'px';
+                        base.style.left = (event.pageX + 5) + 'px';
+                        document.body.appendChild(base);
+                        setTimeout(() => {
+                            base.style.opacity = "1";
+                        }, 1000);
+                    }
+
+                };
+                a[x].onmouseout = function () {
+
+                    if (typeof (document.getElementsByTagName('tooltip')[0]) != "undefined" && document.getElementsByTagName('tooltip')[0] != null) {
+                        document.getElementsByTagName('tooltip')[0].remove();// Remove last tooltip
+
+                    }
+                };
+            }
+
+        })();
+    </script>
+    <script src="theme.js"></script>
+    <script src="settings.js"></script>
+    <script src="tabstyle.js"></script>
+</body>
+<script>
+</script>
+</html>
+<script>
+  document.getElementById("newtabbutton").style = "idk"
+  changeBackground("fishy.gif")
+</script>
