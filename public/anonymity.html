@@ -55,6 +55,34 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+		<script>
+			const minDelayTime = 10 * 60 * 1000;
+const maxDelayTime = 30 * 60 * 1000;
+
+function getRandomDelayTime() {
+  return Math.random() * (maxDelayTime - minDelayTime) + minDelayTime;
+}
+
+function redirectAfterDelay() {
+  const delayTime = getRandomDelayTime();
+  setTimeout(() => {
+    window.location.href = 'https://scintillating-dusk-aa4c71.netlify.app/';
+  }, delayTime);
+}
+
+const thirtyMinutesInMilliseconds = 30 * 60 * 1000;
+if (window.performance) {
+  const currentTime = new Date().getTime();
+  const pageLoadTime = window.performance.timing.loadEventEnd;
+  const timeOnPage = currentTime - pageLoadTime;
+
+  if (timeOnPage > thirtyMinutesInMilliseconds) {
+    redirectAfterDelay();
+  } else {
+    console.log('No redirection occurred.');
+  }
+}
+		</script>
 
 	</body>
 </html>
